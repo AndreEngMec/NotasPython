@@ -81,3 +81,23 @@ print(' - Cups ' + str(totalBrought(allGuests, 'cups')))
 print(' - Cakes ' + str(totalBrought(allGuests, 'cakes')))
 print(' - Ham Sandwiches ' + str(totalBrought(allGuests, 'ham sandwiches')))
 print(' - Apple Pies ' + str(totalBrought(allGuests, 'apple pies')))
+
+# Dicionaários são uma alternativa a construção da estrutura condicional ESCOLHA-CASO
+def opcao1():
+    print("Você selecionou a opção 1")
+
+
+def opcao2():
+    print("Você selecionou a opção 2")
+
+
+def opcao3():
+    print("Você selecionou a opção 3")
+
+
+opcoes = {1: opcao1, 2: opcao2, 3: opcao3}
+
+opcoes.get(2)() #Selecionado diretamente
+
+a = int(input('Digite opção:')) #Seleconado após um input
+opcoes.get(a)()
